@@ -1,0 +1,6 @@
+if SHIELD_PLANCK_KIT
+
+config ZMK_KEYBOARD_NAME
+    default "BCI Planck"
+
+endif

@@ -1,0 +1,8 @@
+file_format: "1"
+id: bci_planck
+name: BCI Planck
+type: shield
+url: https://github.com/kithamon/planck_kit
+requires: [pro_micro]
+features:
+  - keys
