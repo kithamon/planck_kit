@@ -6,18 +6,6 @@
     tapping-term-ms = <170>;
 };
 
-/ {
-    macros {
-        yrmom: yrmom {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp y &kp o &kp o &kp r &kp m &kp o &kp m &kp N1>
-                ;
-        };
-    };
-};
-
 
 / {
     keymap {
@@ -70,13 +58,13 @@
 
         control {
             // ------------------------------------------------------------------------------------------------------------------
-            // |sys_reset|bootloader| BT Clear | BT Prev | BT Next |  ___   |  yrmom  |   ___   |  ___   |  ___   |   ___   |   ___   |
+            // |sys_reset|bootloader| BT Clear | BT Prev | BT Next |  ___   |   ___   |   ___   |  ___   |  ___   |   ___   |   ___   |
             // |  BT  0  |   BT 1   |   BT 2   |   ___   |   ___   |  ___   |   ___   |   ___   |  ___   |  ___   |   ___   |   ___   |
             // |   ___   |    ___   |   ___    |   ___   |   ___   |  ___   |   ___   |   ___   |  ___   |  ___   |   ___   |   ___   |
             // |         |    ___   |   ___    |   ___   |   ___   |      SPACE       |   ___   |  ___   |  ___   |   ___   |   ___   |
             // ------------------------------------------------------------------------------------------------------------------
             bindings = <
-                &sys_reset &bootloader &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &yrmom &trans &trans &trans &trans &trans
+                &sys_reset &bootloader &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &trans &trans &trans &trans &trans &trans
                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
